@@ -1,21 +1,76 @@
-body
-	background #c4c4c4
+azul = #22BCE0
+gris_oscuro = #444
 
-header 
+body
+	background #e8e8e8e
+	color gris_oscuro
+	font-family Arial
+	font-size 16px
+
+header
+	background gris_oscuro
+	color white
+	padding 0.5em
+
 	.logo
-		border 5px solid blue
-		
+		border-right 2px solid azul
+		width 60px
+
 		img
-			height 40px
-			display inline-block
+			width 52px
 
 	.titular
+		margin 0 80px 0 70px
+		
 		.titulo
-			float right
+			font-size 18px
+			font-weight normal
+			margin 0
+			padding 0
 
+		.filtro
+			padding 10px
+			text-decoration none
+			
+		.publicar
+			padding 10px
+			text-decoration none
 
+	.usuario
+		.avatar
+			img
+				width 70px
+				border-radius 50%
+				
 nav
-	background blue
-	max-width 100%
-	border 5px solid red
+	background azul
+	.menu
+		margin 0
+		li
+			display inline-block
+			padding 15px 0 15px 0
 
+		li:hover
+				background white
+			a
+				text-decoration none
+				padding 15px 20px
+
+				
+			
+
+
+.left
+	float left
+
+.right
+	float right
+
+footer
+	background #C3CF3A
+	max-widht 100%
+	border 1px solid red
+	padding 40px
+
+	h3
+		text-align center

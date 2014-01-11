@@ -1,5 +1,18 @@
-body{background:#c4c4c4}
-header .logo{border:5px solid #00f;}
-header .logo img{height:40px;display:inline-block}
-header .titular .titulo{float:right}
-nav{background:#00f;max-width:100%;border:5px solid #f00}
+body{background:#e8e8e8 e;color:#444;font-family:Arial;font-size:16px}
+header{background:#444;color:#fff;padding:.5em;}
+header .logo{border-right:2px solid #22bce0;width:60px;}
+header .logo img{width:52px}
+header .titular{margin:0 80px 0 70px;}
+header .titular .titulo{font-size:18px;font-weight:normal;margin:0;padding:0}
+header .titular .filtro{padding:10px;text-decoration:none}
+header .titular .publicar{padding:10px;text-decoration:none}
+header .usuario .avatar img{width:70px;border-radius:50%}
+nav{background:#22bce0;}
+nav .menu{margin:0;}
+nav .menu li{display:inline-block;padding:15px 0 15px 0}
+nav .menu li:hover{background:#fff}
+nav .menu a{text-decoration:none;padding:15px 20px}
+.left{float:left}
+.right{float:right}
+footer{background:#c3cf3a;max-widht:100%;border:1px solid #f00;padding:40px;}
+footer h3{text-align:center}
