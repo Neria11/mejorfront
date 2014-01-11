@@ -1,0 +1,5 @@
+body{background:#c4c4c4}
+header .logo{border:5px solid #00f;}
+header .logo img{height:40px;display:inline-block}
+header .titular .titulo{float:right}
+nav{background:#00f;max-width:100%;border:5px solid #f00}
