@@ -10,6 +10,7 @@ body
 
 header
 	background gris_oscuro
+	box-shadow 0 3px 0 rgba(0,0,0,0.2)
 	color white
 	overflow hidden
 	padding 0.5em
@@ -121,18 +122,22 @@ header
 				
 nav
 	background azul
+	border-left 15px solid white
+
 
 	.menu
 		height 40px
 		line-height 40px
 		margin 0
+		overflow-x auto
+		overflow-y hidden
 		padding 0
+		white-space nowrap
 
 		li
 			display inline-block
 
 			a
-				border 1px solid red
 				color white
 				display block
 				margin 0 0.5em
