@@ -8,10 +8,10 @@ header .titular .filtro{padding:10px;text-decoration:none;color:#fff}
 header .titular .publicar{padding:10px;text-decoration:none;color:#fff}
 header .usuario{float:right;margin-right:4px;}
 header .usuario .avatar{display:inline-block;}
-header .usuario .avatar img{width:50px;border-radius:50%}
-header .usuario .flechita{color:#fff;text-decoration:none;vertical-align:center}
-.posts .post .descripcion .detalles .autor a{color:#000;text-decoration:none}
-.posts .post .descripcion .detalles .tag{color:#000;text-decoration:none}
+header .usuario .avatar img{width:70px;border-radius:50%}
+header .usuario .flechita{color:#fff;text-decoration:none}
+.posts .post .descripcion .detalles .autor a{text-decoration:none;color:#000}
+.posts .post .descripcion .detalles .tag{text-decoration:none;color:#000}
 nav{background:#22bce0;}
 nav .menu{margin:0;}
 nav .menu li{display:inline-block;padding:15px 0 15px 0}
