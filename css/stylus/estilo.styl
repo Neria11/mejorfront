@@ -3,6 +3,17 @@ gris_oscuro = #444
 gris_texto = #7A7A7A
 naranja = #DD4F24
 
+@font-face {
+	font-family: 'iconitos'; /*Éste es el nombre, puede cambiarse*/
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 a
 	color naranja
 
@@ -14,10 +25,8 @@ body
 
 footer
 	background naranja
-	bottom 0
 	color rgba(white, 0.5)
 	padding 1em 0
-	position fixed
 	text-align center
 	width 100%
 
@@ -72,9 +81,16 @@ header
 			color white
 			float right
 			font-style italic
-			padding 0.2em
+			padding 0.2em 0.5em
 			text-decoration none
 			text-shadow 1px 1px 0 black
+
+			&:before
+				font-family "iconitos"
+				content "\e601"
+				display inline-block
+				margin 0 3px 0 0
+				text-shadow none
 
 	.usuario
 		position absolute
@@ -103,17 +119,25 @@ header
 			width 50%
 			z-index 0
 
+			&:after
+				font-family "iconitos"
+				display block
+				content "\e602" 
+				margin 1px 0 0 1px
+				text-shadow 1px 1px 0 black
 
 .posts
 	padding 0.5em
-	
+
 	.post
 		background white
 		border-radius 0 0 0.5em 0.5em
 		box-shadow 2px 2px 10px rgba(black, 0.5)
 		color gris_texto
+		margin-bottom 0.5em
 
 		.descripcion
+			
 			.imagen
 				float left
 
@@ -156,12 +180,31 @@ header
 			
 			.votos
 				float left
+
 				.up
 				.down
+					font-size 1.5em
 					text-decoration none
+
+					&:before
+						font-family "iconitos"
+						vertical-align middle
+
+				.up
+					color red
+
+					&:before
+						content "\e602"
+
+				.down
+					color green
+
+					&:before
+						content "\e603"
 									
 				.total				
 					text-decoration none	
+
 			.datos
 				float right
 
@@ -174,8 +217,14 @@ header
 					text-decoration none
 
 				.estrellita
+					color #FCB920
 					text-decoration none
-								
+					font-size 1.5em
+					vertical-align middle
+
+					&:before
+						font-family "iconitos"
+						content "\e600"
 				
 nav
 	background azul
@@ -199,6 +248,9 @@ nav
 		padding 0
 		white-space nowrap
 
+		&::-webkit-scrollbar
+			display none
+
 		li
 			display inline-block
 
@@ -213,9 +265,36 @@ nav
 				&:hover
 					background rgba(black,0.1)
 
-.left
-	float left
 
-.right
-	float right
+@media screen and (min-width: 768px)
 
+	header
+		
+		.titular
+			
+			.publicar
+				font-size 1.1em
+				padding-left 3em
+				position relative
+
+				&:before
+					left 0
+					font-size 2.5em
+					position absolute
+					top -10px
+
+	.posts
+		.post
+			display inline-block
+			width 48%
+			vertical-align top
+
+			&:nth-child(odd)
+				margin-right 1.2%
+				margin-left 1.2%
+
+		  /*&:nth-child(odd)
+				background azul*//*Se usa even para pares y odd ara impares
+				al hacer 2 columnas en responsive design*/
+
+	
