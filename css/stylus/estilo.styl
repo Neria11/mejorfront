@@ -1,6 +1,10 @@
 azul = #22BCE0
 gris_oscuro = #444
+gris_texto = #7A7A7A
 naranja = #DD4F24
+
+a
+	color naranja
 
 body
 	background #e8e8e8e
@@ -80,46 +84,74 @@ header
 
 
 .posts
-	border-bottom 3px solid #3E97D1
-	display inline-block
-	margin 20px 31px
+	padding 0.5em
 	
-
 	.post
+		background white
+		border-radius 0 0 0.5em 0.5em
+		box-shadow 2px 2px 10px rgba(black, 0.5)
+		color gris_texto
+
 		.descripcion
 			.imagen
+				float left
+
 				img
-					border 2px solid green
-					float left
-					margin 5px 20px 
-					width 150px
+					height 160px
+					vertical-align top
+					width 120px
 				
 			.detalles
+				height 160px
+				margin-left 130px
+
+				.titulo
+					color gris_oscuro
+					font-size 18px
+					font-style italic
+					margin 0
+					padding 0.5em 0.5em 0 0
+
 				.autor
+					margin 0.5em 0 2em 0
 					a
 						text-decoration none
-						color black
+						
 				.tag
+					background azul
+					border-radius 0.5em
+					color white
+					padding 0.2em 0.5em
 					text-decoration none
-					color black
+
+				.fecha
+					float right
+					margin 0
+
 		.acciones
+			border-top 3px solid azul
+			overflow hidden
+			padding 0.5em			
 			
 			.votos
+				float left
 				.up
-					text-decoration none
-					color black
-				.total
-					
 				.down
 					text-decoration none
-					color black	
+									
+				.total				
+					text-decoration none	
 			.datos
-				
+				float right
+
 				.comentarios
+					background gris_oscuro
+					border-radius 
+					color white
 					
 				.estrellita
 					text-decoration none
-					color black				
+								
 				
 nav
 	background azul
@@ -140,7 +172,6 @@ nav
 		line-height 40px
 		margin 0
 		overflow-x auto
-		overflow-y hidden
 		padding 0
 		white-space nowrap
 
