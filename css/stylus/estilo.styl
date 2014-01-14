@@ -12,9 +12,30 @@ body
 	font-family Arial
 	font-size 16px
 
+footer
+	background naranja
+	bottom 0
+	color rgba(white, 0.5)
+	padding 1em 0
+	position fixed
+	text-align center
+	width 100%
+
+	h3
+		font-size 14px
+		font-weight normal
+
+		strong
+			display block
+
+		.mejor
+			&:before
+			&:after
+				content " - "
+
 header
 	background gris_oscuro
-	box-shadow 0 3px 0 rgba(0,0,0,0.2)
+	box-shadow 0 5px 0 rgba(0,0,0,0.2)
 	color white
 	overflow hidden
 	padding 0.5em
@@ -126,7 +147,7 @@ header
 
 				.fecha
 					float right
-					margin 0
+					margin 0 1em 0 0
 
 		.acciones
 			border-top 3px solid azul
@@ -146,9 +167,12 @@ header
 
 				.comentarios
 					background gris_oscuro
-					border-radius 
+					border-radius 3px
 					color white
-					
+					margin 0 1em 0 0
+					padding 2px 5px
+					text-decoration none
+
 				.estrellita
 					text-decoration none
 								
@@ -195,12 +219,3 @@ nav
 .right
 	float right
 
-footer
-	background #C3CF3A
-	max-widht 100%
-	border 1px solid red
-	padding 40px
-
-
-	h3
-		text-align center
